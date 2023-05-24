@@ -31,10 +31,10 @@
 
         default_layer {
 // ------------------------------------------------------------------------------------------------------------
-// |  `    |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |   -   |
+// |  ESC  |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |   -   |
 // |  TAB  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   | BKSPC |
-// |  ESC  |  A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K    |  L   |   ;   |   '   |
-// | SHIFT |  Z  |  X  |  C   |  V   |  B   |  MUTE  |  |       |  N   |  M    |  ,    |  .   |   /   | SHIFT |
+// | SHIFT |  A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K    |  L   |   ;   |   '   |
+// | LCTRL |  Z  |  X  |  C   |  V   |  B   |  MUTE  |  |       |  N   |  M    |  ,    |  .   |   /   | SHIFT |
 //               | GUI | ALT  | CTRL | ENTER|  LOWER |  | RAISE | SPACE | CTRL | ALT   | GUI  |
             bindings = <
 &kp ESC   &kp N1   &kp N2   &kp N3    &kp N4    &kp N5                       &kp N6  &kp N7    &kp N8    &kp N9   &kp N0    &kp DEL
@@ -69,8 +69,8 @@
         raise_layer {
 // ------------------------------------------------------------------------------------------------------------
 // |BTCLR| BT1  | BT2  |  BT3  |  BT4  |  BT5 |                |      |      |       |      |       |       |
-// |     | INS  | PSCR | GUI   |       |      |                |      | PGDN |  PGUP |      |       |       |
-// |     | ALT  | CTRL | SHIFT |       | CAPS |                | <-   |   v  |   ^   |  ->  |  DEL  | BKSPC |
+// |     | INS  | PSCR | GUI   |       |      |                |PG_UP | HOME |  ↑    | END  |       |       |
+// |     | ALT  | CTRL | SHIFT |       | CAPS |                |PG_DN |  <   |   ↓   |  ->  |       |  DEL  |
 // |     | UNDO | CUT  | COPY  | PASTE |      |      |  |      |      | Prev | Play  | Next |       |       |
 //              |      |       |       |      |      |  |      |      |      |       |      |
             bindings = <
