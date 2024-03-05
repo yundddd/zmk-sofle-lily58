@@ -41,7 +41,7 @@
 &kp TAB         &kp Q   &kp W   &kp E     &kp R             &kp T                                   &kp Y         &kp U     &kp I      &kp O    &kp P     &kp EQUAL
 &kp LCTRL       &kp A   &kp S   &kp D     &kp F             &kp G                                   &kp H         &kp J     &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LEFT_SHIFT  &kp Z   &kp X   &kp C     &kp V             &kp B            &kp C_MUTE    &kp INS  &kp N         &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp BACKSLASH
-                        &none   &kp LALT  &kp LEFT_COMMAND  &lt 2 BACKSPACE  &kp SPACE     &kp RET  &lt 1 DELETE  &kp LBKT  &kp RBKT   &none
+                        &none   &kp LALT  &kp LEFT_COMMAND  &lt 1 BACKSPACE  &kp SPACE     &kp RET  &lt 2 DELETE  &kp LBKT  &kp RBKT   &none
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT LEFT>, <&inc_dec_kp DOWN UP>;
@@ -56,11 +56,11 @@
 
         layer_1 {
             bindings = <
-&none      &none             &none     &none              &none          &none                  &none  &none  &none  &none  &none  &none
-&none      &kp LA(LG(LEFT))  &kp UP    &kp LG(LA(RIGHT))  &kp PAGE_UP    &none                  &none  &none  &none  &none  &none  &none
-&kp LSHFT  &kp LEFT          &kp DOWN  &kp RIGHT          &kp PAGE_DOWN  &none                  &none  &none  &none  &none  &none  &none
-&kp LCTRL  &none             &none     &none              &none          &none  &none    &none  &none  &none  &none  &none  &none  &none
-                             &none     &kp LALT           &kp LGUI       &none  &none    &none  &none  &none  &none  &none
+&none      &none         &none     &none          &none          &none                  &none  &none  &none  &none  &none  &none
+&none      &kp LA(LEFT)  &kp UP    &kp LA(RIGHT)  &kp PAGE_UP    &none                  &none  &none  &none  &none  &none  &none
+&kp LSHFT  &kp LEFT      &kp DOWN  &kp RIGHT      &kp PAGE_DOWN  &none                  &none  &none  &none  &none  &none  &none
+&kp LCTRL  &none         &none     &none          &none          &none  &none    &none  &none  &none  &none  &none  &none  &none
+                         &none     &kp LALT       &kp LGUI       &none  &none    &none  &none  &none  &none  &none
             >;
         };
 
