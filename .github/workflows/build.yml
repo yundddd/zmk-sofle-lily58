@@ -29,6 +29,8 @@ jobs:
       fail-fast: false
       matrix: ${{fromJson(needs.matrix.outputs.matrix)}}
     steps:
+      - name: Install pip
+        run: sudo apt install python3-pip
       - name: Install setuptools
         run: python3 -m pip install setuptools
       - name: Prepare variables
