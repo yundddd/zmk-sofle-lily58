@@ -12,7 +12,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Install yaml2json
-        run: python3 -m pip install remarshal setuptools
+        run: python3 -m pip install remarshal
       - id: set-matrix
         name: Fetch Build Matrix
         run: |
@@ -29,6 +29,8 @@ jobs:
       fail-fast: false
       matrix: ${{fromJson(needs.matrix.outputs.matrix)}}
     steps:
+      - name: Install setuptools
+        run: python3 -m pip install setuptools
       - name: Prepare variables
         id: variables
         run: |
