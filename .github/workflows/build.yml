@@ -22,7 +22,7 @@ jobs:
   build:
     runs-on: ubuntu-20.04
     container:
-      image: zmkfirmware/zmk-build-arm:stable
+      image: zmkfirmware/zmk-build-arm:3.0-branch-20220401031016-3.0.0-0.13.2-d69745c8be52-2074873098
     needs: matrix
     name: Build
     strategy:
